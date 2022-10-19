@@ -1,0 +1,44 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32929.385
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Amazing.HttpClientLogDemo", "Amazing.HttpClientLogDemo\Amazing.HttpClientLogDemo.csproj", "{500A7453-D897-4ED5-A03C-2AE90F9BBE7E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Amazing.PostmanEechoSDK", "Amazing.PostmanEechoSDK\Amazing.PostmanEechoSDK.csproj", "{AA2A46F4-F83D-4221-858A-0A458640E421}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Amazing.HttpClientLog", "Amazing.HttpClientLog\Amazing.HttpClientLog.csproj", "{E5B887A6-68B3-4C6D-93FC-80478B5759C7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+		发布|Any CPU = 发布|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{500A7453-D897-4ED5-A03C-2AE90F9BBE7E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{500A7453-D897-4ED5-A03C-2AE90F9BBE7E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{500A7453-D897-4ED5-A03C-2AE90F9BBE7E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{500A7453-D897-4ED5-A03C-2AE90F9BBE7E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{500A7453-D897-4ED5-A03C-2AE90F9BBE7E}.发布|Any CPU.ActiveCfg = 发布|Any CPU
+		{500A7453-D897-4ED5-A03C-2AE90F9BBE7E}.发布|Any CPU.Build.0 = 发布|Any CPU
+		{AA2A46F4-F83D-4221-858A-0A458640E421}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AA2A46F4-F83D-4221-858A-0A458640E421}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AA2A46F4-F83D-4221-858A-0A458640E421}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AA2A46F4-F83D-4221-858A-0A458640E421}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AA2A46F4-F83D-4221-858A-0A458640E421}.发布|Any CPU.ActiveCfg = 发布|Any CPU
+		{AA2A46F4-F83D-4221-858A-0A458640E421}.发布|Any CPU.Build.0 = 发布|Any CPU
+		{E5B887A6-68B3-4C6D-93FC-80478B5759C7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E5B887A6-68B3-4C6D-93FC-80478B5759C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E5B887A6-68B3-4C6D-93FC-80478B5759C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E5B887A6-68B3-4C6D-93FC-80478B5759C7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E5B887A6-68B3-4C6D-93FC-80478B5759C7}.发布|Any CPU.ActiveCfg = 发布|Any CPU
+		{E5B887A6-68B3-4C6D-93FC-80478B5759C7}.发布|Any CPU.Build.0 = 发布|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {431C9633-3AE3-4300-8EAD-C461331ED923}
+	EndGlobalSection
+EndGlobal

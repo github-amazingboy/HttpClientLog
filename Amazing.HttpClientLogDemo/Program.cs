@@ -1,8 +1,9 @@
-# HttpClientLog
-a httpclient log, which record the log , do something before send,do something after sent.
+using Amazing.HttpClientLog;
+using Amazing.PostmanEechoSDK;
+using Microsoft.Extensions.Options;
 
-## Using
-```c#
+var builder = WebApplication.CreateBuilder(args);
+
 DelegatingHandlerBuilder dhb = new DelegatingHandlerBuilder();
 dhb.IfUriContain("postman-echo.com").BeforeSend((sp, req, cancel) =>
 {
@@ -30,7 +31,6 @@ dhb2.IfUriContain("get").BeforeSend((sp, req, cancel) =>
 
     var body = request.Content == null ? null : await request.Content.ReadAsStringAsync();
     
-
 }).AfterSent(async (sp, req, res) =>
 {
     var obj = await res.Content.ReadAsStringAsync();
@@ -99,4 +99,22 @@ builder.Services.AddHttpClient(Options.DefaultName)
     .AddHttpMessageHandler(sp => dhb2.Build(sp))
     .AddHttpMessageHandler(sp => dhb3.Build(sp))
     .AddHttpMessageHandler(sp => dhb4.Build(sp)); 
-```
+
+
+builder.Services.AddTransient<PostManEchoAPI>();
+
+var app = builder.Build();
+
+app.MapGet("/", async (PostManEchoAPI api) =>
+{
+    //string content = await api.GetUsers();
+
+    string content = await api.Post();
+
+    return content;
+}
+);
+
+app.Run();
+
+
